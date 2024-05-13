@@ -11,9 +11,9 @@ from urllib.parse import quote_plus
 
 # Initialize MongoDB python client
 from pymongo import MongoClient
-password = "neeraj@22"
+password = "<password>"
 escaped_password = quote_plus(password)
-uri = f"mongodb+srv://neerajadmin:{escaped_password}@cluster0.lpaxeue.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = f"<moongoUri>"
 
 client = MongoClient(uri)
 collection = client[params.db_name][params.collection_name]
